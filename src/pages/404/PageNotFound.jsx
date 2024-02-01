@@ -1,8 +1,10 @@
+import React from "react";
+
 import "./style.scss";
 
 import ContentWrapper from "../../components/contentWrapper/ContentWrapper";
 
-export const PageNotFound = () => {
+const PageNotFound = () => {
   return (
     <div className="pageNotFound">
       <ContentWrapper>
@@ -12,3 +14,5 @@ export const PageNotFound = () => {
     </div>
   );
 };
+
+export default PageNotFound;

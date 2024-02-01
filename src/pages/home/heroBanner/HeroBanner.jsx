@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./style.scss";
@@ -39,19 +39,18 @@ const HeroBanner = () => {
       <div className="opacity-layer"></div>
       <ContentWrapper>
         <div className="heroBannerContent">
-          <span className="title">Добро пожаловать.</span>
+          <span className="title">Welcome.</span>
           <span className="subTitle">
-            Миллионы фильмов, телешоу и людей, которых стоит открыть для себя.
-            Исследуйте сейчас.{" "}
+            Millions of movies, TV shows and people to discover. Explore now.
           </span>
           <div className="searchInput">
             <input
               type="text"
-              placeholder="Найдите фильм или телешоу.."
+              placeholder="Search for a movie or tv show...."
               onChange={(e) => setQuery(e.target.value)}
               onKeyUp={searchQueryHandler}
             />
-            <button>Поиск</button>
+            <button>Search</button>
           </div>
         </div>
       </ContentWrapper>

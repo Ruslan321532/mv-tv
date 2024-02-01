@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
@@ -21,12 +22,12 @@ const Footer = () => {
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
-          Откройте для себя мир бескрайних возможностей развлечений! Погрузитесь
-          в богатство кинематографа, наслаждайтесь миллионами фильмов и телешоу,
-          которые мы подобрали для вас. Исследуйте новые и классические шедевры,
-          находите вдохновение и наслаждайтесь незабываемыми моментами
-          развлечений. Добро пожаловать в мир невероятных историй – ваш источник
-          удовольствия на каждый день!
+          Discover a world of endless entertainment possibilities! Immerse
+          yourself in the richness of cinema and enjoy the millions of movies
+          and TV shows we've handpicked for you. Explore new and classic
+          masterpieces, find inspiration and enjoy unforgettable moments of
+          entertainment. Welcome to the world of incredible stories - your
+          source of pleasure for every day
         </div>
         <div className="socialIcons">
           <span className="icon">

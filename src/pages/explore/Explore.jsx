@@ -51,7 +51,6 @@ const Explore = () => {
         if (data?.results) {
           setData({
             ...data,
-            // eslint-disable-next-line no-unsafe-optional-chaining
             results: [...data?.results, ...res.results],
           });
         } else {

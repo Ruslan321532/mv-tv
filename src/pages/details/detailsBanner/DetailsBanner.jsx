@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -15,7 +14,6 @@ import PosterFallback from "../../../assets/no-poster.png";
 import { PlayIcon } from "../Playbtn";
 import VideoPopup from "../../../components/videoPopup/VideoPopup";
 
-// eslint-disable-next-line react/prop-types
 const DetailsBanner = ({ video, crew }) => {
   const [show, setShow] = useState(false);
   const [videoId, setVideoId] = useState(null);
@@ -27,9 +25,7 @@ const DetailsBanner = ({ video, crew }) => {
 
   const _genres = data?.genres?.map((g) => g.id);
 
-  // eslint-disable-next-line react/prop-types
   const director = crew?.filter((f) => f.job === "Director");
-  // eslint-disable-next-line react/prop-types
   const writer = crew?.filter(
     (f) => f.job === "Screenplay" || f.job === "Story" || f.job === "Writer"
   );
